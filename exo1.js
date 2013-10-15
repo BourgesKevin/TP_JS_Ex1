@@ -37,5 +37,4 @@ function sub(e){
 
 //On utilise adder à laquelle on passe le nombre de paramètres souhaité.
 
-
 adder(mult(2), sub(2), mult(2))(3);
