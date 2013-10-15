@@ -14,9 +14,9 @@ function adder(){
         args.forEach(function(val) {
         console.log(vretour + ' ' + val(v));
         vretour += val(v);
-    })
+    });
     return vretour;
-  }
+  };
 }
 
 //Utilisation d'une closure pour effectuer une multiplication.
@@ -24,7 +24,7 @@ function adder(){
 function mult(v){
     return function(e){
         return v*e;
-    }
+    };
 }
 
 //Même principe que pour mult(v), on utilise une closure pour faire la soustraction.
@@ -32,9 +32,10 @@ function mult(v){
 function sub(e){
     return function(r) {
         return e-r;
-    }
+    };
 }
 
 //On utilise adder à laquelle on passe le nombre de paramètres souhaité.
+
 
 adder(mult(2), sub(2), mult(2))(3);
