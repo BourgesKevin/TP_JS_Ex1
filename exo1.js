@@ -29,9 +29,11 @@ function adder(){
 //Using a closure to calculate a product.
 
 function mult(v){
+ 
  /// <summary>Calculate the product of the first group of parameters including only one number with the second group of parameters including only one number too.</summary>
  /// <param type="Number">The number to multiply</param>
  /// <returns type="Number">The result of the multiplication.</returns>
+ 
     return function(e){
         return v*e;
     };
@@ -41,6 +43,7 @@ function mult(v){
 //Same thing than mult(v), we use a closure to calculate the difference.
 
 function sub(e){
+ 
  /// <summary>Calculate the difference between the first group of parameters including only one number with the second group of parameters including only one number too.</summary>
  /// <param type="Number">The base number from wich the second will be substracted</param>
  /// <returns type="Number">The result of the substration.</returns>
